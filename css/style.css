@@ -1,0 +1,222 @@
+/* css reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display:flex;
+    /* for in center */
+    align-items:center;
+     /*to make in center of the whole page */
+     position:relative;
+    /* position: sticky; */
+    top:0px;
+}
+/* logo and img */
+#logo{
+    margin: 18px 23px;
+}
+#logo img{
+    height: 90px;
+    margin: 9px 5px;
+    
+}
+
+/* list styling */
+#navbar ul{
+    display:flex;
+    font-family: 'Roboto Slab', serif;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+#navbar ul li{
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+    font-size:1rem;
+    display:flex;
+}
+#navbar ul li a{
+    /* block the display to give padding */
+    display:block;
+    color:white;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:34px 200px;
+    height:354px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    
+}
+#home::before{
+    content:"";
+    background: #000 center/cover url("../img/pexels-ella-olsson-1640777.jpg") no-repeat ;
+    position:absolute;
+    height:80%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+
+}
+/* utility */
+#home h1{
+    text-align: center;
+    color: black;
+}
+#home p{
+    text-align: center;
+    color: black;
+    font-size:1.2rem;
+}
+/* services section */
+#services{
+    display:flex;
+    margin:34px;
+}
+.box{
+    border:2px soli d red;
+    padding:34px;
+    border-radius: 23px;
+    margin:-10px 6px;
+    background:#f2f2f2;
+}
+
+.box img{
+    height:100px;
+    /* make display block to use margin auto */
+    margin:auto;
+    display:block;
+}
+.box p{
+    font-family: 'Lato', sans-serif;
+}
+/* clients-sections */
+#client-section{
+    /* height:344px; */
+    position: relative;
+}
+#client-section::before{
+    /* using pseudo selectors */
+    content: "";
+    position: absolute;
+    background:url('../img/pexels-ash-376464.jpg');
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity:0.4px;
+    /* border-radius: 28px; */
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height:100px;
+}
+.client-item{
+    padding:34px;
+}
+/* contact section */
+#contact{
+    position:relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url('../img/best-contact-us-pages-1520x800.png') no-repeat center center/cover;
+}
+#contactbox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contactbox input,
+#contactbox textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contactbox form{
+    width:40%;
+}
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+footer{
+    background-color: #000;
+    color: #f2f2f2;
+    padding:9px 20px;
+    text-align: center;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.h-primary1{
+    font-size: 2.8rem;
+    padding:32px;
+    text-align: center;
+    color:rgb(201, 198, 206);
+    font-family: 'Lato', sans-serif;
+}
+.h-secondary{
+    font-size:2.2rem;
+    padding:12px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.btn{
+    padding:9px 12px;
+    border:2px solid black;
+    background-color: aliceblue;
+    color:black;
+    margin:14px 10px;
+    border-radius: 23px;
+    font-size: 1.1rem;
+    cursor:pointer;
+}
+center{
+    text-align:center;
+}
